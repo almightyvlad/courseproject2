@@ -1,0 +1,167 @@
+.productsContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.filterContainer {
+    display: flex;
+    flex-direction: column;
+    background:#f0f0f0;
+    border-radius: 8px;
+    height: 100%;
+    padding: 0 1em ;
+}
+
+.sliderContainer {
+    display: flex;
+    flex-direction: column;
+    width: 10em;
+    margin: 0 1em 0 1em;
+}
+
+.priceRangeInputs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.priceRangeInputs div input {
+    width: 4em;
+    height: 2em;
+}
+
+.priceContainer {
+    margin: 1em;
+}
+
+.availability {
+    display: flex;
+    flex-direction: row;
+    margin: 1em 0;
+} 
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: space-between;
+    font-size: 14px;
+    width: 17em;
+    height: 25em;
+    padding: 0.5em;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.75);
+}
+
+.product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.productInfo {
+    width: 15em;
+    height: 15em;
+}
+
+.imgProduct {
+    margin: 1em 0;
+    width: 15em;
+    height: 15em;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+
+.nameProduct {
+    height: 3em;
+}
+
+.presenceProduct {
+    height: 2em;
+    color: #4a4a4a;
+    font-weight: 300;
+}
+
+.buyContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.priceProduct {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.buyButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 5px;
+    background: rgb(255, 69, 69);
+    font-size: 20px;
+    color: #fff;
+}
+
+.buyButton:hover {
+    opacity: 0.9;
+}
+
+@media screen and (max-width: 767px) {
+    .productsContainer {
+        display: flex;
+        flex-direction: column;
+        margin: 1em 0;
+    }
+
+    .sliderContainer {
+        width: 90%;
+        margin: -0.5em 1em 0 1em;
+    }
+
+    .priceRangeInputs {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .priceRangeInputs div input {
+        width: 10em;
+        height: 2em;
+    }
+
+    .priceContainer {
+        font-size: 16px;
+    }
+
+    .availability {
+        display: flex;
+        flex-direction: row;
+        margin: 1em 0;
+        font-size: 16px;
+    }
+
+    .products {
+        margin: 1em 0;
+    }
+    .product {
+        margin: 0.4em 0;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 998px) {}
+
+
+@media screen and (min-width: 998px) {}

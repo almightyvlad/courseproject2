@@ -1,0 +1,264 @@
+.orderContainer {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    margin: 0 1em;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 0 1em;
+}
+
+.inputRow {
+    display: flex;
+}
+
+.inputContainer input {
+    width: 70%;
+}
+
+.inputContainer {
+    display: flex;
+    flex-direction: column;
+    margin: 0 1em 1em 0;
+    flex: 1;
+}
+
+.inputContainer label {
+    margin-bottom: 0.4em;
+}
+
+.inputContainer input {
+    border: 1px solid #c8c8c8;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.errorsContainer {
+    background: #ec3c3c;
+    color: #fff;
+    padding: 1em;
+    border-radius: 5px;
+    margin-bottom: 1em;
+    line-height: 2em;
+}
+
+.button {
+    width: 10em;
+}
+
+.infoContainer {
+    margin: 1em 0 0 5em;
+}
+
+.infoTitle {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.list {
+    line-height: 2em;
+}
+
+.link {
+    margin: 0 0 1em;
+}
+
+.link a {
+    text-decoration: none;
+    color: #2f80ed;
+}
+
+.link a:hover {
+    transition: all 0.2s ease-in-out;
+    opacity: 0.6;
+}
+
+.delivery {
+    display: flex;
+    flex-direction: column;
+    margin: 1em 0 0;
+}
+
+.deliveryTitle, .paymentTitle, .notesTitle {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0.5em 0;
+}
+
+.deliveryInfo {
+    display: flex;
+    flex-direction: column;
+    margin: 1em 0;
+}
+
+.payment {
+    margin: 1em 0;
+}
+
+.orderCard {
+    width: 30%;
+    height: 100%;
+    padding: 1em;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #fff;
+}
+
+.orderCardTitle {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.orderRow {
+    margin: 1em 0;
+}
+
+.value {
+    float: right;
+    font-weight: 700;
+}
+
+.horizontalLine {
+    height: 1px;
+    background-color: #ddd;
+}
+
+.total {
+    font-weight: bold;
+    margin-top: 8px;
+    font-size: 16px;
+}
+
+.valueTotal {
+    float: right;
+    font-weight: 700;
+}
+
+.buttonPlacing {
+    width: 100%;
+    height: 100%;
+    margin: 1em 0 0 0;
+    padding: 0.7em;
+    background-color: rgb(255, 69, 69);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 700;
+    transition: background-color 0.5s ease, transform 0.5s ease;
+}
+
+.buttonPlacing:hover {
+    background-color: rgb(200, 50, 50);
+}
+
+.radioOption {
+    display: flex;
+    margin: 0.5em 0;
+    padding: 1em;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.radioOption.selected {
+    border-color: #666;
+}
+
+.radioOption.selected .radioCircle {
+    background: #666;
+}
+
+.radioCircle {
+    display: flex;
+    width: 1em;
+    height: 1em;
+    margin: 0em 0.5em;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.radioCircle {
+    border: 1px solid #9a9898;
+}
+
+.radioNameDescription {
+    margin: 0.2em 0;
+    color: #888;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.textareaContainer {
+    margin: 1em 0;
+}
+
+textarea {
+    width: 95%;
+    max-height: 15em;
+    min-height: 10em;
+    padding: 10px;
+    color: #333;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    resize: vertical;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+textarea:focus {
+    border-color: #666;
+}
+
+textarea::placeholder {
+    color: #aaa;
+}
+
+.loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 767px) {
+    .orderContainer {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0 0 0 1em;
+    }
+    .orderCard {
+        width: 90%;
+        margin: 0 0 0 1em;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0 0 0 -1em;
+    }
+
+    .inputContainer input {
+        width: 95%;
+    }
+
+    .textareaContainer {
+        width: 95%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 998px) {}
+
+
+@media screen and (min-width: 998px) {}

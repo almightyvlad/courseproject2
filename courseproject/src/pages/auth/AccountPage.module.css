@@ -1,0 +1,58 @@
+.mainContainer {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+.name,
+.surname,
+.email,
+.phone {
+    margin-bottom: 1em;
+}
+
+.logoutButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5em;
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.logoutButton:hover {
+    background-color: #c0392b;
+}
+
+.logoutButton span {
+    margin-left: 1em;
+}
+
+.downloading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;  
+}
+
+@media screen and (max-width: 767px) {
+    .mainContainer {
+        background-color: #f9f9f9;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        width: 90%;
+       
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 998px) {}
+
+@media screen and (min-width: 998px) {}

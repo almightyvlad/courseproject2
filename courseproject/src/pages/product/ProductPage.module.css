@@ -1,0 +1,226 @@
+.mainContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1em 0;
+}
+
+.mainInfoContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30%;
+    height: 8em;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 1em;
+}
+
+.mainImageContainer {
+    width: 60%;
+    height: 28em;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    text-align: center;
+    padding: 1em;
+}
+
+.mainImageContainer img {
+    height: 28em;
+}
+
+.price {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.buyButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 1.6em;
+    border-radius: 5px;
+    background: rgb(255, 69, 69);
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.buyButton:hover {
+    opacity: 0.9;
+}
+
+.buyButtonText {
+    font-weight: 500;
+    font-size: 18px;
+    margin: 0 0 0 0.2em;
+}
+
+.descriptionContainer {
+    margin: 1em 0;
+}
+
+.descriptionTitle {
+    display: flex;
+    flex-direction: row;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.descriptionName {
+    margin: 0 0 0 0.5em;
+    color: #666;
+}
+
+.description {
+    width: 59%;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+    margin: 1em 0 0 0;
+}
+
+.description p {
+    margin-bottom: 15px;
+    color: #222;
+}
+
+.description p:last-child {
+    margin-bottom: 0;
+}
+
+.presence {
+    margin: 1em 0 1em 0;
+    
+}
+
+.recommendationsContainer {
+    margin: 1em 0;
+}
+
+.recommendationsTitle {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0 0 1em;
+}
+
+.recommendationsList {
+    display: flex;
+    gap: 1em;
+}
+
+.recommendationItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: space-between;
+    font-size: 12px;
+    border-radius: 10px;
+    width: 17em;
+    height: 20em;
+    margin: 0 0.5em 0;
+    padding: 0.5em;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.75);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0;
+    animation: fadeInItem 0.5s forwards;
+    cursor: pointer;
+}
+
+.recommendationItem:hover {
+    transform: scale(1.05);
+}
+
+
+.recommendationItem img {
+    max-width: 120px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.recommendationName {
+
+    font-weight: 700;
+    color: #333;
+    margin: 1em;
+    height: 4em;
+    overflow: hidden;
+}
+
+.recommendationPrice {
+    font-size: 1em;
+    color: #444;
+    font-weight: 600;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInItem {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .mainContainer {
+        flex-direction: column;
+    }
+    .mainImageContainer {
+        width: 90%; 
+        height: 22em;
+    }
+    .mainImageContainer img {
+        height: 22em;
+    }
+    .mainInfoContainer {
+        width: 90%;
+        margin: 1em 0;
+    }
+    .recommendationsTitle {
+        font-size: 18px;
+        font-weight: 700;
+        margin: -0.5em 0 1em;
+    }
+    .recommendationsList {
+        flex-direction: column;
+    }
+    .recommendationItem {
+        font-size: 14px;
+        width: 90%;
+        height: 20em;
+        margin: 0 0.5em 0;
+        padding: 0.5em;
+    }
+    .descriptionContainer {
+        flex-direction: column;
+    }
+    .description {
+        width: 90%;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 998px) {}
+
+
+@media screen and (min-width: 998px) {}

@@ -1,0 +1,214 @@
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin: 20px 0;
+    font-size: 16px;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #ddd;
+}
+
+.mobileTable {
+    display: none;
+}   
+
+th,
+td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+th:first-child,
+td:first-child {
+    border-left: none;
+}
+
+th:last-child, 
+td:last-child {
+    border-right: none;
+}
+
+tr:first-child th:first-child {
+    border-top-left-radius: 10px;
+}
+
+tr:first-child th:last-child {
+    border-top-right-radius: 10px;
+}
+
+tr:last-child td:first-child {
+    border-bottom-left-radius: 10px;
+}
+
+tr:last-child td:last-child {
+    border-bottom-right-radius: 10px;
+}
+
+thead {
+    background-color: #f8f8f8;
+}
+
+th,
+td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    font-weight: bold;
+    color: #333;
+}
+
+.productImg img {
+    max-width: 80px;
+    height: auto;
+    border-radius: 4px;
+}
+
+.productName {
+    font-weight: bold;
+}
+
+.productPrice {
+    font-weight: bold;
+}
+
+.productTotalPrice {
+    width: 10em;
+    font-weight: bold;
+}
+
+.productDelete {
+    text-align: center;
+}
+
+.productDelete svg {
+    cursor: pointer;
+    color: #d9534f;
+    font-size: 20px;
+}
+
+.productEmpty {
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+
+.counterContainer {
+    display: flex;
+    align-items: center;
+}
+
+.counter {
+    width: 5em;
+    height: 2em;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+}
+
+button {
+    width: 2em;
+    height: 2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.checkoutContainer {
+    flex-direction: column;
+    font-size: 16px;
+}
+
+.totalPrice {
+    text-align: right;
+    font-weight: bold;
+}
+
+.nextPageButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #333;
+    float: right;
+    color: #fff;
+    width: 15em;
+    height: 2em;
+    margin-top: 0.5em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.nextPageButton a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nextPageButton:hover {
+    opacity: 0.9;
+}
+
+.downloading {
+    display: flex;
+    justify-content: center;
+    margin: 1em;
+} 
+
+@media screen and (max-width: 767px) {
+    thead {
+        display: none;
+    }
+    .mobileTable {
+        display: flex;
+        font-size: 12px;
+        font-weight: 400;
+    }
+    table {
+        width: 100%;
+        font-size: 14px;
+        border-spacing: 0 10px;
+    }
+    tr {
+        margin-bottom: 100px;
+    }
+    td {
+        width: 95%;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+    }
+    .productName {
+        display: none;
+    }
+    .productTotalPrice {
+        width: 95%;
+    }
+    .productDelete {
+        display: none;
+    }
+    .mobileName {
+       font-weight: 700;
+       margin: 1em 0 1em 1em;
+    }
+    .imageContainer {
+        display: flex;
+    }
+    .productDeleteMobile svg {
+        color: #d9534f;
+        font-size: 16px;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 998px) {
+
+}
+
+
+@media screen and (min-width: 998px) {}

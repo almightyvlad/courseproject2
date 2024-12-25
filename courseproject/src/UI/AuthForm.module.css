@@ -1,0 +1,113 @@
+.authContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.authForm {
+    flex-direction: column;
+    width: 50%;
+}
+
+.inputRow {
+    display: flex;
+}
+
+.inputContainer {
+    display: flex;
+    flex-direction: column;
+    margin: 0 1em 1em 0;
+    flex: 1;
+}
+
+.inputContainer label {
+    margin-bottom: 0.4em;
+}
+
+.inputContainer input {
+    border: 1px solid #c8c8c8;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+.errorsContainer {
+    background: #ec3c3c;
+    color: #fff;
+    padding: 1em;
+    border-radius: 5px;
+    margin-bottom: 1em;
+    line-height: 2em;
+}
+
+.button {
+    width: 10em;
+}
+
+.infoContainer {
+    margin: 1em 0 0 5em;
+}
+
+.infoTitle {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.list {
+    line-height: 2em;
+}
+
+.link {
+    margin: 0 0 1em;
+}
+
+.link a {
+    text-decoration: none;
+    color: #2f80ed;
+}
+
+.link a:hover {
+    transition: all 0.2s ease-in-out;
+    opacity: 0.6;
+}
+
+@media screen and (max-width: 767px) {
+    .authContainer {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .authForm {
+        width: 90%;
+        margin: 1em 0 0 0;
+        padding: 0 1em;
+
+    }
+
+    .inputRow {
+        flex-direction: column;
+    }
+
+    .inputContainer {
+        margin: 0 0 1em 0;
+    }
+
+    .button {
+        width: 100%;
+        padding: 1em 1em 2em 1em;
+    }
+
+    .infoContainer {
+        margin: 2em 0;
+    }
+
+    .list {
+        margin: 1em 0 0 -1em;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 998px) {
+    
+
+}
+
+
+@media screen and (min-width: 998px) {}

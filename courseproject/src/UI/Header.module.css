@@ -1,0 +1,187 @@
+.headerContainer {
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
+    height: 5em;
+    background: #000;
+    color: #fff;
+}
+
+.headerElements {
+    display: flex;
+    align-items: center;
+}
+
+.logoContainer {
+    overflow: hidden;
+    width: 8em;
+    height: 8em;
+}
+
+.logo {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    background: url('../images/logo.png');
+    margin: 0.2em 0 0 0;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.catalogButton {
+    display: none;
+    cursor: pointer;
+    font-size: 25px;
+    border: 1px solid #fff;
+    margin: 0 0 0 0.3em;
+    border-radius: 5px;
+}
+
+
+.search {
+    width: 35em;
+    border-radius: 5px;
+    background: #fff;
+}
+
+.searchInput {
+    border-radius: 5px;
+}
+
+.navContainer {
+    display: flex;
+    margin: 0 2.5em;
+}
+
+.navElement {
+    color: #fff;
+    font-size: 26px;
+    margin: 0 0.3em;
+    cursor: pointer;
+}
+
+.searchElement {
+    display: none;
+}
+
+.navElement:hover {
+    transition: all 0.2s ease-in-out;
+    opacity: 0.5;
+}
+
+.catalogContainer {
+    display: flex;
+    justify-content: space-around;
+    font-size: 14px;
+    height: 3em;
+    background: #3d3d3d;
+    color: #fff;
+}
+
+.catalogElement {
+    display: flex;
+    background-color: #3d3d3d;
+    color: #fff;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    height: 3em;
+    width: 16.7%;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.catalogElement:hover {
+    background: #efc467 radial-gradient(circle, transparent 1%, #efc467 1%) center/15000%;
+    color: #000;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+.sidenavOpen {
+    width: 250px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    font-size: 25px;
+    text-decoration: none;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+
+.sidenav div:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+
+@media screen and (max-width: 767px) {
+    .headerContainer {
+        font-size: 14px;
+        height: 5em;
+    }
+    .catalogButton {
+        display: flex;
+        font-size: 35px;
+    }
+    .logo {
+        margin: 0.2em 0 0 -1em;
+    }
+    .search {
+        width: 20em;
+    }
+    .navContainer {
+        margin: 0 1em;
+    }
+    .navElement {
+        font-size: 30px;
+        margin: 0 0.2em;
+    }
+    .catalogContainer {
+        display: none;
+    }
+
+    .searchElement {
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 998px) {
+    .headerContainer {
+        font-size: 12px;
+        flex-direction: row;
+        height: 5em;
+    }
+    .search {
+        width: 35em;
+    }
+    .catalogContainer {
+        display: flex;
+    }
+}
+
+
+@media screen and (min-width: 998px) {}
